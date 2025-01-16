@@ -3,17 +3,24 @@ site_name: AlanYan 的小博客
 theme:
   name: material
   language: zh
+  favicon: images/favicon.png
+  font:
+    text: Parkinsans, Noto Sans Simplified Chinese
+    code: Roboto Mono, Noto Sans Simplified Chinese
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: custom
       toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
+        icon: material/lightbulb-outline
+        name: 切换至深色
 
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: custom
       toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+        icon: material/lightbulb
+        name: 切换至亮色
+
+  extra_css:
+    - stylesheets/main.css
